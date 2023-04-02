@@ -18,7 +18,7 @@ def process_queries(queries):
                 if contact.number == cur_query.number:
                     contact.name = cur_query.name
                     break
-            else: # otherwise, just add it
+            else:
                 contacts.append(cur_query)
         elif cur_query.type == 'del':
             for j in range(len(contacts)):
